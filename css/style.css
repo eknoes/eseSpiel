@@ -10,3 +10,11 @@
   clear: both;
   height: 30px;
 }
+
+body {
+  margin: 0px;
+}
+
+iframe {
+  border: none;
+}
