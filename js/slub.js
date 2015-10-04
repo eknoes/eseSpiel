@@ -42,42 +42,46 @@ function getMadSite() {
 /* Random Popups */
 window.setInterval(function(){
   if(getRandomInt(0, 4) == 3) {
-    //window.open(getMadSite());
+    window.open(getMadSite());
   }
 }, 1000);
 
-window.setInterval(function(){
-  if(!firstLoad) {
-    spans = $("iframe").contents().find("span")
-    $(spans.get(getRandomInt(0, spans.length - 1))).text(getMadWords(getRandomInt(1, 4)));
-    console.log("changed a word");
-  } else {
-    if (getRandomInt(1,3) == 2) {
-      firstLoad = false;
-    }
-  }
-}, 1500);
 
-window.setInterval(function(){
-  if(!firstLoad) {
-    spans = $("iframe").contents().find(".field-title_short")
-    $(spans.get(getRandomInt(0, spans.length - 1))).text(getTitle());
-    console.log("changed a title");
-  } else {
-    if (getRandomInt(1,3) == 2) {
-      firstLoad = false;
-    }
-  }
-}, 500);
 
-window.setInterval(function(){
-  if(!firstLoad) {
-    spans = $("iframe").contents().find(".field-author")
-    $(spans.get(getRandomInt(0, spans.length - 1))).text(getAuthors());
-    console.log("changed authors");
-  } else {
-    if (getRandomInt(1,3) == 2) {
-      firstLoad = false;
+$("iframe").load(function() {
+  window.setInterval(function(){
+    if(!firstLoad) {
+      spans = $("iframe").contents().find("span")
+      $(spans.get(getRandomInt(0, spans.length - 1))).text(getMadWords(getRandomInt(1, 4)));
+      console.log("changed a word");
+    } else {
+      if (getRandomInt(1,3) == 2) {
+        firstLoad = false;
+      }
     }
-  }
-}, 800);
+  }, 1500);
+
+  window.setInterval(function(){
+    if(!firstLoad) {
+      spans = $("iframe").contents().find(".field-title_short")
+      $(spans.get(getRandomInt(0, spans.length - 1))).text(getTitle());
+      console.log("changed a title");
+    } else {
+      if (getRandomInt(1,3) == 2) {
+        firstLoad = false;
+      }
+    }
+  }, 700);
+
+  window.setInterval(function(){
+    if(!firstLoad) {
+      spans = $("iframe").contents().find(".field-author")
+      $(spans.get(getRandomInt(0, spans.length - 1))).text(getAuthors());
+      console.log("changed authors");
+    } else {
+      if (getRandomInt(1,3) == 2) {
+        firstLoad = false;
+      }
+    }
+  }, 1000);
+});
