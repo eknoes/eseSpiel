@@ -3,7 +3,7 @@ slub = $("iframe").contents();
 firstLoad = true;
 
 
-prettyMad = ['http://neue-sexpartner.com/de/juicypop/', 'http://www.gaymaletube.com/', 'http://www.dinotube.com/%2522Big+Boobs%2522%257C%2522Big+Breasts%2522%257C%2522Big+Tits%2522%257CBigtits-tube/5482/c/1/page/0/', 'http://de.xhamster.com/', 'http://de.xhamster.com/channels/new-handjobs-1.html'];
+prettyMad = ['http://neue-sexpartner.com/de/juicypop/', 'http://www.dinotube.com/%2522Big+Boobs%2522%257C%2522Big+Breasts%2522%257C%2522Big+Tits%2522%257CBigtits-tube/5482/c/1/page/0/', 'http://de.xhamster.com/', 'http://de.xhamster.com/channels/new-handjobs-1.html'];
 madSites = ['http://google.de', 'http://facebook.com', 'http://faz.net'];
 madWords = ['TEST', 'BETA', 'LOREM IPSUM', 'ESE'];
 randAuthor = ['PROF. A. SCHWEISS', 'DR. ROSA SCHLUEPFER', 'TROLL, JOSCHKA', 'BILL GATES', 'STEVE JOBS'];
@@ -44,7 +44,7 @@ window.setInterval(function(){
   if(getRandomInt(0, 4) == 3) {
     window.open(getMadSite());
   }
-}, 1000);
+}, 3000);
 
 
 
