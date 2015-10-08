@@ -47,7 +47,6 @@ window.setInterval(function(){
 }, 5000);
 
 
-
 /*$("iframe").load(function() {
   window.setInterval(function(){
     if(!firstLoad) {
