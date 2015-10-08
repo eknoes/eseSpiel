@@ -15,7 +15,7 @@
         <h1>*5lub dr35d3n 4cc0un7 fu3r 3ch73 h4ck3r</h1>
     </div>
 
-        <form style="width: 100%;" data-abide id="reg">
+        <form style="width: 100%;" data-abide="ajax" id="reg">
           <div class="columns small-3 small-centered" style="overflow: scroll; height: 500px;">
             <div class="row">
               <div style="width: 200%;">
@@ -52,7 +52,7 @@
                   </ul>
                 </div>
                 <div class="right">
-                  Aktzeptiert <input id="checkbox1" type="checkbox" required  tabindex="3"/>
+                  Akzeptiert <input id="checkbox1" type="checkbox" required  tabindex="3"/>
                   <small class="error">DU SOLLST DEN HAKEN SETZEN!</small>
 
                 </div>
@@ -63,7 +63,7 @@
                   </ul>
                 </div>
                 <div class="right">
-                  Aktzeptiert <input id="checkbox1" type="checkbox" required  tabindex="5"/>
+                  Akzeptiert <input id="checkbox1" type="checkbox" required  tabindex="5"/>
                   <small class="error">DU SOLLST DEN HAKEN SETZEN!</small>
 
                 </div>
@@ -74,7 +74,7 @@
                   </ul>
                 </div>
                 <div class="right">
-                  Aktzeptiert <input id="checkbox1" type="checkbox" required  tabindex="8"/>
+                  Akzeptiert <input id="checkbox1" type="checkbox" required  tabindex="8"/>
                   <small class="error">DU SOLLST DEN HAKEN SETZEN!</small>
                 </div>
                 <div class="clear"></div>
@@ -84,7 +84,7 @@
                   </ul>
                 </div>
                 <div class="right">
-                  Aktzeptiert <input id="checkbox1" type="checkbox" required  tabindex="6"/>
+                  Akzeptiert <input id="checkbox1" type="checkbox" required  tabindex="6"/>
                   <small class="error">DU SOLLST DEN HAKEN SETZEN!</small>
                 </div>
 
@@ -95,7 +95,7 @@
                   </ul>
                 </div>
                 <div class="right">
-                  Aktzeptiert <input id="checkbox1" type="checkbox" required  tabindex="10"/>
+                  Akzeptiert <input id="checkbox1" type="checkbox" required  tabindex="10"/>
                   <small class="error">DU SOLLST DEN HAKEN SETZEN!</small>
                 </div>
                 <div class="clear"></div>
@@ -105,7 +105,7 @@
                   </ul>
                 </div>
                 <div class="right">
-                  Aktzeptiert <input id="checkbox1" type="checkbox" required  tabindex="11"/>
+                  Akzeptiert <input id="checkbox1" type="checkbox" required  tabindex="11"/>
                   <small class="error">DU SOLLST DEN HAKEN SETZEN!</small>
                 </div>
                 <div class="clear"></div>
@@ -115,7 +115,7 @@
                   </ul>
                 </div>
                 <div class="right">
-                  Aktzeptiert <input id="dontCheck" type="checkbox"  tabindex="2" onclick='$("input").val(""); $("input:not(#dontCheck)").attr("checked", false);'/>
+                  Akzeptiert <input id="dontCheck" type="checkbox"  tabindex="2" onclick='$("input").val(""); $("input:not(#dontCheck)").attr("checked", false);'/>
                 </div>
               </div>
               <div class="clear"></div>
@@ -138,6 +138,7 @@
     <script>
       $(document).foundation();
       $("#reg").on('valid.fndtn.abide', function () {
+        console.log("VALIDE");
         $('#myModal .lead').text(Math.floor((Math.random() * 100000) + 1));
         $('#myModal').foundation('reveal', 'open');
       });
