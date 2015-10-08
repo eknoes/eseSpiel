@@ -47,18 +47,7 @@ window.setInterval(function(){
 }, 5000);
 
 
-/*$("iframe").load(function() {
-  window.setInterval(function(){
-    if(!firstLoad) {
-      spans = $("iframe").contents().find("span")
-      $(spans.get(getRandomInt(0, spans.length - 1))).text(getMadWords(getRandomInt(1, 4)));
-      console.log("changed a word");
-    } else {
-      if (getRandomInt(1,3) == 2) {
-        firstLoad = false;
-      }
-    }
-  }, 1500);*/
+$("iframe").load(function() {
 
   window.setInterval(function(){
     if(!firstLoad) {
